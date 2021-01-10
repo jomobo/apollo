@@ -1,0 +1,12 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "packages/config-babel"
+    },
+    {
+      "path": "packages/apollo-common"
+    },
+  ],
+  "extends": "./tsconfig.options.json"
+}

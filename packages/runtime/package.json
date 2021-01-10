@@ -1,0 +1,23 @@
+{
+  "name": "@jomobo/runtime",
+  "version": "1.0.0",
+  "description": "Build tool runtimes",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jomobo/apollo.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jomobo/apollo/issues"
+  },
+  "homepage": "https://github.com/jomobo/apollo#readme",
+  "dependencies": {
+    "@beemo/cli": "^1.0.11",
+    "@beemo/core": "^1.1.8"
+  }
+}

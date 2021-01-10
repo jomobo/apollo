@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "name": "@jomobo/apollo",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "tsc --build && beemo create-config eslint",
+    "clean": "rm -fr packages/*/{lib,*.tsbuildinfo}",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jomobo/apollo.git"
+  },
+  "author": "Michael Lubitz <michael.lubitz@jomobo.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jomobo/apollo/issues"
+  },
+  "beemo": {
+    "module": "@jomobo/apollo",
+    "drivers": [
+      "babel"
+    ],
+    "settings": {
+      "node": true
+    }
+  },
+  "workspaces": [
+    "./packages/*"
+  ],
+  "homepage": "https://github.com/jomobo/apollo#readme",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "declarationDir": "lib",
+    "outDir": "lib",
+    "rootDir": "src"
+  },
+  "exclude": [
+    "lib",
+  ],
+  "extends": "../../tsconfig.options.json",
+  "include": [
+    "src/**/*"
+  ],
+  "references": [
+    {
+      "path": "../apollo-common"
+    }
+  ]
+}
