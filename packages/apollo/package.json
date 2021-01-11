@@ -1,0 +1,28 @@
+{
+  "name": "@jomobo/apollo",
+  "version": "1.1.0",
+  "description": "Shared build tools",
+  "scripts": {
+    "postinstall": "node ./link.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jomobo/apollo.git"
+  },
+  "keywords": [
+    "config",
+    "apollo"
+  ],
+  "author": "Michael Lubitz",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=10.16.0"
+  },
+  "dependencies": {
+    "@jomobo/apollo-config": "^1.1.0",
+    "@jomobo/apollo-runtime": "^1.0.0"
+  }
+}

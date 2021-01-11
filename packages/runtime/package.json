@@ -1,23 +1,28 @@
 {
-  "name": "@jomobo/runtime",
+  "name": "@jomobo/apollo-runtime",
   "version": "1.0.0",
   "description": "Build tool runtimes",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jomobo/apollo.git"
   },
-  "author": "",
+  "author": "Michael Lubitz",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jomobo/apollo/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://github.com/jomobo/apollo#readme",
   "dependencies": {
+    "@babel/core": "^7.12.10",
     "@beemo/cli": "^1.0.11",
-    "@beemo/core": "^1.1.8"
+    "@beemo/core": "^1.1.8",
+    "@beemo/driver-babel": "^1.2.6",
+    "@beemo/driver-eslint": "^1.2.3",
+    "@beemo/driver-typescript": "^1.4.1",
+    "eslint": "^7.17.0",
+    "typescript": "^4.1.3"
   }
 }

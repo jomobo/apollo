@@ -948,6 +948,14 @@
   dependencies:
     rimraf "^3.0.2"
 
+"@beemo/driver-typescript@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@beemo/driver-typescript/-/driver-typescript-1.4.1.tgz#1f23be828905a456b6615abff61b012d7b3143ef"
+  integrity sha512-L0vgYeEb0207dp/O462cPaJK7cecRjes1W5g4VMNu0s13/0zzWwvF/z50MzgS/K1YXdN2tDigv3uA6EHXffWOw==
+  dependencies:
+    "@boost/event" "^1.3.1"
+    rimraf "^3.0.2"
+
 "@boost/common@^1.8.5", "@boost/common@^1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@boost/common/-/common-1.9.0.tgz#9f0cf25320e819ab8eaba373e052e69ad74482a8"
@@ -1056,6 +1064,27 @@
   integrity sha512-Lh/A7Lq7zH84Yol92WbQIpRsWyFUvVh4FAQFNgORcNmmk5Klsk3RW6oiM9gS5+DLdBKh2RdQB0G2gBN/csxUbQ==
   dependencies:
     "@beemo/core" "^1.1.8"
+
+"@jomobo/apollo-config@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@jomobo/apollo-config/-/apollo-config-1.0.0.tgz#6292ca7f9e40a6eb00c4395d4a88c2a8898c4fda"
+  integrity sha512-1LjMfAJDSu3581GL9F6fv5NNcovgSWXALY+Fg4NBcQWknn0iUMoKpY8mTB0Higlk+JH82VglH6poL55nb2S8Fw==
+  dependencies:
+    "@babel/cli" "^7.8.4"
+    "@babel/core" "^7.9.0"
+    "@babel/plugin-transform-react-jsx-self" "^7.12.1"
+    "@babel/plugin-transform-react-jsx-source" "^7.12.1"
+    "@babel/plugin-transform-runtime" "^7.12.10"
+    "@babel/preset-env" "^7.12.11"
+    "@babel/preset-react" "^7.12.10"
+    "@beemo/core" "^1.1.8"
+    "@beemo/driver-babel" "^1.2.6"
+    "@beemo/driver-typescript" "^1.4.1"
+    "@jomobo/apollo-common" "^1.0.0"
+    babel-plugin-transform-dev "^2.0.1"
+    babel-plugin-transform-react-remove-prop-types "^0.4.24"
+    babel-plugin-typescript-to-proptypes "^1.4.2"
+    typescript "^4.1.3"
 
 "@nicolo-ribaudo/chokidar-2@2.1.8-no-fsevents":
   version "2.1.8-no-fsevents"
@@ -1374,9 +1403,9 @@ camelcase@^5.0.0:
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
 caniuse-lite@^1.0.30001173:
-  version "1.0.30001173"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001173.tgz#3c47bbe3cd6d7a9eda7f50ac016d158005569f56"
-  integrity sha512-R3aqmjrICdGCTAnSXtNyvWYMK3YtV5jwudbq0T7nN9k4kmE4CBuwPqyJ+KBzepSTh0huivV2gLbSMEzTTmfeYw==
+  version "1.0.30001174"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001174.tgz#0f2aca2153fd88ceb07a2bb982fc2acb787623c4"
+  integrity sha512-tqClL/4ThQq6cfFXH3oJL4rifFBeM6gTkphjao5kgwMaW9yn0tKgQLAEfKzDwj6HQWCB/aWo8kTFlSvIN8geEA==
 
 chalk@^2.0.0, chalk@^2.4.2:
   version "2.4.2"
@@ -3190,6 +3219,11 @@ type-fest@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.11.0.tgz#97abf0872310fed88a5c466b25681576145e33f1"
   integrity sha512-OdjXJxnCN1AvyLSzeKIgXTXxV+99ZuXl3Hpo9XpJAv9MBcHrrJOQ5kV7ypXOuQie+AmWG25hLbiKdwYTifzcfQ==
+
+typescript@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.3.tgz#519d582bd94cba0cf8934c7d8e8467e473f53bb7"
+  integrity sha512-B3ZIOf1IKeH2ixgHhj6la6xdwR9QrLC5d1VKeCSY4tvkqhF2eqd9O7txNlS0PO3GrBAFIdr3L1ndNwteUbZLYg==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"

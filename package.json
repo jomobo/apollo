@@ -6,8 +6,10 @@
   "main": "index.js",
   "scripts": {
     "setup": "tsc --build && beemo create-config eslint",
+    "build": "beemo typescript --build --reference-workspaces",
     "clean": "rm -fr packages/*/{lib,*.tsbuildinfo}",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "beemo eslint ./packages/config",
+    "publish": "lerna publish"
   },
   "repository": {
     "type": "git",
@@ -19,9 +21,11 @@
     "url": "https://github.com/jomobo/apollo/issues"
   },
   "beemo": {
-    "module": "@jomobo/apollo",
+    "module": "@jomobo/apollo-config",
     "drivers": [
-      "babel"
+      "babel",
+      "eslint",
+      "typescript"
     ],
     "settings": {
       "node": true
@@ -33,5 +37,8 @@
   "homepage": "https://github.com/jomobo/apollo#readme",
   "devDependencies": {
     "lerna": "^3.22.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
