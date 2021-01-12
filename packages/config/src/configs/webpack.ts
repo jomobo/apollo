@@ -29,7 +29,7 @@ const plugins = [
   }),
   new HtmlWebpackPlugin({
     chunks: ['runtime', 'core'],
-    template: `{$srcFolder}/index.html`,
+    template: `${srcFolder}/index.html`,
     filename: 'index.html',
     favicon: ''
   })
