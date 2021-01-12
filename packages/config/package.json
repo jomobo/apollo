@@ -1,6 +1,6 @@
 {
   "name": "@jomobo/apollo-config",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Reusable configuration files",
   "main": "lib/index.js",
   "repository": {
