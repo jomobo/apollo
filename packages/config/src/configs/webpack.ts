@@ -3,7 +3,7 @@ import { WebpackConfig } from '@beemo/driver-webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import webpack from 'webpack';
 import path from 'path';
-import { ASSET_EXT_PATTERN, TJSX_EXT_PATTERN } from '../constants';
+import { ASSET_EXT_PATTERN, EXTS, TJSX_EXT_PATTERN } from '../constants';
 import { getSettings } from '../helpers';
 
 const PROD = process.env.NODE_ENV === 'production';
@@ -80,6 +80,10 @@ const config : WebpackConfig = {
         },
       },
     ],
+  },
+
+  resolve: {
+    extensions: [".wasm", ".mjs", ...EXTS],
   },
 
   output: {

@@ -9,6 +9,7 @@ function hasNoPositionalArgs(context: DriverContext, name: string): boolean {
 
 export default function apollo(tool: Beemo) {
   const usingTypeScript = tool.isPluginEnabled('driver', 'typescript');
+  const usingBabel = tool.isPluginEnabled('driver', 'babel');
   const exts = usingTypeScript ? ['.ts', '.tsx', '.js', '.jsx'] : ['.js', '.jsx'];
   const workspacePrefixes = tool.getWorkspacePaths( { relative: true } );
 
@@ -26,6 +27,7 @@ export default function apollo(tool: Beemo) {
     }
   });
 
+  // ESLINT
   tool.onRunDriver.listen((context) => {
     context.addOptions(['--color', '--fix']);
     context.addOption('--ext', exts);
@@ -41,4 +43,19 @@ export default function apollo(tool: Beemo) {
     }
 
   }, 'eslint');
+
+  // WEBPACK
+  tool.onRunDriver.listen((context, driver) => {
+    context.addOptions(['--colors', '--progress', '--bail']);
+
+    if (usingBabel) {
+      driver.options.dependencies.push('babel');
+
+      process.env.ESM = 'true';
+    }
+
+    if (usingTypeScript) {
+      driver.options.dependencies.push('typescript');
+    }
+  }, 'webpack');
 };
