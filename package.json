@@ -25,7 +25,8 @@
     "drivers": [
       "babel",
       "eslint",
-      "typescript"
+      "typescript",
+      "webpack"
     ],
     "settings": {
       "node": true

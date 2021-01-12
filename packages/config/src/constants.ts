@@ -22,3 +22,5 @@ export const IGNORE_PATHS = [
 export const EXTS = ['.ts', '.tsx', '.js', '.jsx', '.json']
 
 export const ASSET_EXT_PATTERN = /\.(ttf|eot|otf|svg|woff|woff2|mp3|png|jpg|jpeg|gif|ico)$/;
+
+export const TJSX_EXT_PATTERN = /\.m?(t|j)sx?$/;

@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+const execa = require('execa');
+const isDocker = require('is-docker');
+
+const port = process.env.PORT || 8081;
+const args = process.argv.slice(2);
+
+args.push('--port', port);
+
+if (isDocker()) {
+  args.push('--host', '0.0.0.0');
+}
+
+execa('webpack-dev-server', args, {
+  cwd: process.cwd(),
+  env: {
+    NODE_ENV: 'development'
+  },
+  preferLocal: true,
+  stdio: 'inherit'
+});
