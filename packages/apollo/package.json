@@ -1,6 +1,6 @@
 {
   "name": "@jomobo/apollo",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "Shared build tools",
   "scripts": {
     "postinstall": "node ./link.js"
@@ -22,7 +22,7 @@
     "node": ">=10.16.0"
   },
   "dependencies": {
-    "@jomobo/apollo-config": "^1.4.3",
+    "@jomobo/apollo-config": "^1.4.4",
     "@jomobo/apollo-runtime": "^1.0.1"
   }
 }
